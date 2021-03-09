@@ -21,38 +21,44 @@
         android:text="@string/article_title"
         android:textColor="@color/white"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heading">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/subheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading"
+                android:padding="8sp"
+                android:paddingStart="8sp"
+                android:paddingLeft="8sp"
+                android:paddingTop="8sp"
+                android:paddingEnd="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:text="@string/app_name"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"/>
 
-    <TextView
-        android:id="@+id/subheading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/heading"
-        android:padding="8sp"
-        android:paddingStart="8sp"
-        android:paddingLeft="8sp"
-        android:paddingTop="8sp"
-        android:paddingEnd="8sp"
-        android:paddingRight="8sp"
-        android:paddingBottom="8sp"
-        android:text="@string/app_name"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault"/>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@id/subheading">
-    <TextView
-        android:id="@+id/article"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/subheading"
-        android:padding="8sp"
-        android:paddingStart="8sp"
-        android:paddingLeft="8sp"
-        android:paddingTop="8sp"
-        android:paddingEnd="8sp"
-        android:paddingRight="8sp"
-        android:paddingBottom="8sp"
-        android:text="@string/article_text"
-        android:autoLink="web"/>
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subheading"
+                android:padding="8sp"
+                android:paddingStart="8sp"
+                android:paddingLeft="8sp"
+                android:paddingTop="8sp"
+                android:paddingEnd="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:text="@string/article_text"
+                android:autoLink="web"/>
+        </LinearLayout>
+
 </ScrollView>
 </RelativeLayout>
