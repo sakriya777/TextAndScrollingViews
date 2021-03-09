@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,48 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/purple_500"
+        android:padding="8sp"
+        android:paddingStart="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="8sp"
+        android:paddingEnd="8sp"
+        android:paddingRight="8sp"
+        android:paddingBottom="8sp"
+        android:text="@string/article_title"
+        android:textColor="@color/white"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:padding="8sp"
+        android:paddingStart="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="8sp"
+        android:paddingEnd="8sp"
+        android:paddingRight="8sp"
+        android:paddingBottom="8sp"
+        android:text="@string/app_name"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"/>
+
+    <TextView
+        android:id="@+id/article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheading"
+        android:padding="8sp"
+        android:paddingStart="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="8sp"
+        android:paddingEnd="8sp"
+        android:paddingRight="8sp"
+        android:paddingBottom="8sp"
+        android:text="@string/article_text" />
+
+</RelativeLayout>
